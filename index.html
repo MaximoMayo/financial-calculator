@@ -13,15 +13,74 @@
 </head>
 
 <body>
-       <div class="container">
-           <h1 class="mt-5">Basic Template </h1>
-           <p class="lead">Simple template to start your design with</p>
-       </div>
+
+    <div id="morgCalculator">
+        <!--Enter numbers for calculator-->
+        <div>
+            <h2></h2>
+            <div class="enterInputs">
+                <p>Mortgage amount : <input type="number" id="principalAmount" /></p>
+                <p>Interest rate : <input type="number" id="interestRate" /></p>
+                <p>Mortgage term : <input type="number" id="mortgageTerm" /></p>
+                <p>Compounding per year : <input type="number" id="compPerYear" /></p>
+            </div>
+            <div class="d-flex calcFunctions">
+                <p class="px-3"><input id="morgBtn" type="button"
+                    value="Calculate Mortgage" /></p>
+            </div>
+        </div>
+        <!--Display your answer-->
+        <div class="answer d-flex">
+            <div><p class="border border-success" id="displayMorgAnswer"></p></div>
+        </div>
+        <div class="answer d-flex">
+            <div><p class="border border-success" id="displayMorgAnswer2"></p></div>
+        </div>
+    </div>
+
+    <div id="compCalculator">
+        <!--Enter numbers for calculator-->
+        <div>
+            <div class="enterInputs">
+                <p>Deposit amount : <input type="number" id="compPrincipalAmount" /></p>
+                <p>Interest rate : <input type="number" id="compInterestRate" /></p>
+                <p>Number of years : <input type="number" id="numberOfYears" /></p>
+            </div>
+            <div class="d-flex calcFunctions">
+                <p class="px-3"><input id="compBtn" type="button"
+                    value="Calculate Daily Compound" /></p>
+            </div>
+        </div>
+        <!--Display your answer-->
+        <div class="answer d-flex">
+            <div><p class="border border-success" id="displayCompAnswer"></p></div>
+        </div>
+    </div>
+    
+    <div id="annuCalculator">
+        <!--Enter numbers for calculator-->
+        <div>
+            <div class="enterInputs">
+                <p>Monthly Payout : <input type="number" id="periodCash" /></p>
+                <p>Expected interest rate : <input type="number" id="interestRatePeriod" /></p>
+                <p>Number of years : <input type="number" id="numberOfPeriod" /></p>
+            </div>
+            <div class="d-flex calcFunctions">
+                <p class="px-3"><input id="annuBtn" type="button"
+                    value="Calculate Ordinary Annuity" /></p>
+            </div>
+        </div>
+        <!--Display your answer-->
+        <div class="answer d-flex">
+            <div><p class="border border-success" id="displayAnnuAnswer"></p></div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
